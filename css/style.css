@@ -1,0 +1,289 @@
+
+———————————no adaptive?———————————
+⠀⣞⢽⢪⢣⢣⢣⢫⡺⡵⣝⡮⣗⢷⢽⢽⢽⣮⡷⡽⣜⣜⢮⢺⣜⢷⢽⢝⡽⣝
+⠸⡸⠜⠕⠕⠁⢁⢇⢏⢽⢺⣪⡳⡝⣎⣏⢯⢞⡿⣟⣷⣳⢯⡷⣽⢽⢯⣳⣫⠇
+⠀⠀⢀⢀⢄⢬⢪⡪⡎⣆⡈⠚⠜⠕⠇⠗⠝⢕⢯⢫⣞⣯⣿⣻⡽⣏⢗⣗⠏⠀
+⠀⠪⡪⡪⣪⢪⢺⢸⢢⢓⢆⢤⢀⠀⠀⠀⠀⠈⢊⢞⡾⣿⡯⣏⢮⠷⠁⠀⠀
+⠀⠀⠀⠈⠊⠆⡃⠕⢕⢇⢇⢇⢇⢇⢏⢎⢎⢆⢄⠀⢑⣽⣿⢝⠲⠉⠀⠀⠀⠀
+⠀⠀⠀⠀⠀⡿⠂⠠⠀⡇⢇⠕⢈⣀⠀⠁⠡⠣⡣⡫⣂⣿⠯⢪⠰⠂⠀⠀⠀⠀
+⠀⠀⠀⠀⡦⡙⡂⢀⢤⢣⠣⡈⣾⡃⠠⠄⠀⡄⢱⣌⣶⢏⢊⠂⠀⠀⠀⠀⠀⠀
+⠀⠀⠀⠀⢝⡲⣜⡮⡏⢎⢌⢂⠙⠢⠐⢀⢘⢵⣽⣿⡿⠁⠁⠀⠀⠀⠀⠀⠀⠀
+⠀⠀⠀⠀⠨⣺⡺⡕⡕⡱⡑⡆⡕⡅⡕⡜⡼⢽⡻⠏⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
+⠀⠀⠀⠀⣼⣳⣫⣾⣵⣗⡵⡱⡡⢣⢑⢕⢜⢕⡝⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
+⠀⠀⠀⣴⣿⣾⣿⣿⣿⡿⡽⡑⢌⠪⡢⡣⣣⡟⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
+⠀⠀⠀⡟⡾⣿⢿⢿⢵⣽⣾⣼⣘⢸⢸⣞⡟⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
+⠀⠀⠀⠀⠁⠇⠡⠩⡫⢿⣝⡻⡮⣒⢽⠋⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
+—————————————————————————————
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	font-family: 'Oswald', sans-serif;
+}
+
+hr {
+	width: 80px;
+	height: 10px;
+	background: #817070;
+}
+
+/*--------- Header style start ---------*/
+
+.header {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	max-width: 1440px;
+	min-width: 320px;
+	margin: 0 auto;
+	background-color: #FFFFFF;
+	padding: 28px 0px;
+
+}
+
+.img__logo{
+	margin-left: 80px;
+}
+
+.container {
+	max-width: 1440px;
+	min-width: 320px;
+	margin: 0 auto;
+}
+
+
+.nav__menu {
+	display: flex;
+	list-style: none;
+}
+
+.nav__menu-item {
+	
+}
+
+.menu-item__link {
+	text-decoration: none;
+	margin: 0 80px 0px 0px;
+	font-weight: 300;
+	font-size: 24px;
+	line-height: 36px;
+	text-align: center;
+	text-transform: uppercase;
+	color: #000000;
+}
+
+.menu-item__link:hover {
+	transition: color 0.5s linear;
+	color: #8c0707;
+}
+
+/*--------- Header style end ---------*/
+
+/*--------- background style image start ---------*/
+.about__wrap {
+	background: url(../img/bg-1.png) center center no-repeat;
+	background-size: cover;
+	max-width: 1440px;
+	height: 812px;
+}
+
+.about__title {
+	font-style: normal;
+	font-weight: 700;
+	font-size: 60px;
+	line-height: 89px;
+	text-transform: uppercase;
+	color: #FFFFFF;
+	text-align: center;
+	padding-top: 267px;
+}
+
+/*--------- background style image end ---------*/
+
+/*--------- Story style start ---------*/
+.story__text {
+	text-align: center;
+	padding-top: 18px;
+	margin: 0px 0px;
+}
+
+.stoty__title {
+	font-style: normal;
+	font-weight: 500;
+	font-size: 36px;
+	line-height: 53px;
+	text-align: center;
+	text-transform: uppercase;
+	color: #000000;
+	padding-top: 18px;
+}
+
+.story__content {
+	display: flex;
+	justify-content: space-between;
+	padding-top: 60px;
+}
+
+.story__text {
+	padding-top: 110px;
+	margin-left: 40px;
+	margin-left: auto;
+    margin-right: auto;
+    width: 40em
+}
+
+.story-img {
+	padding-bottom: 60px;
+	padding-left: 80px;
+}
+
+.contetn__text {
+	font-style: normal;
+	font-weight: 300;
+	font-size: 20px;
+	line-height: 30px;
+	color: #000000;
+}
+
+/*--------- Story style  end ---------*/
+
+/*--------- Blog  style start ---------*/
+.blog__wrap {
+	background: #EFEFEF;
+}
+
+
+.blog__title {
+	text-align: center;
+	padding: 60px 0;
+	font-style: normal;
+	font-weight: 500;
+	font-size: 36px;
+	line-height: 53px;
+	text-align: center;
+	text-transform: uppercase;
+	color: #000000;
+}
+
+.blog__cards {
+	display: flex;
+	justify-content: space-between;
+	margin: 0px 103px;
+
+}
+
+/*--------- Cards style start ---------*/
+
+.card__title {
+	
+	padding-left: 20px;
+	padding-top: 20px;
+	padding-bottom: 24px;
+}
+.card {
+	background-color: #fff;
+	margin-left: 40px;
+	margin-bottom: 65px;
+}
+
+.card-img {
+	padding: 0px 20px;
+}
+
+.card-text {
+	padding: 24px 20px 46px 20px;
+}
+
+/*--------- Submit style start ---------*/
+
+.submit__content {
+	background-color: #817070;
+	height: 337px;
+	text-align: center;
+}
+
+.subscribe__text {
+	margin: 0px;
+	padding-top: 60px;
+	padding-bottom: 28px;
+	font-style: normal;
+	font-weight: 500;
+	font-size: 36px;
+	line-height: 53px;
+	text-align: center;
+	text-transform: uppercase;
+	color: #FFFFFF;
+}
+
+
+.email-form {
+	background: #817070;
+	border: 3px solid #FFFFFF;
+	width: 300px;
+	height: 55px;
+	color: white;
+	
+	font-style: normal;
+	font-weight: 300;
+	font-size: 20px;
+	line-height: 30px;
+	color: #FFFFFF;
+}
+
+.submit-btn{
+	padding: 13px 34px;
+	background: #FFFFFF;
+	border: 3px solid #FFFFFF;
+	margin-top: 30px;
+	font-style: normal;
+	font-weight: 500;
+	font-size: 20px;
+	line-height: 30px;
+	text-align: center;
+	text-transform: uppercase;
+	color: #817070;
+}
+
+/*Placholder color & Text*/
+input::-webkit-input-placeholder { 
+	font-style: normal;
+	font-weight: 300;
+	font-size: 20px;
+	line-height: 30px;
+	text-align: center;
+	color: #FFFFFF;
+	padding: 9px 16px 96px; 
+}
+
+.submit-btn:hover {
+	background-color: #302b2b;
+	color: #FFF;
+	transition: background-color 0.5s linear;
+
+}
+
+/*--------- Submit style end ---------*/
+
+/*--------- Footer style start ---------*/
+.footer__content {
+	background: #FFFFFF;
+	max-height: 72px;;
+}
+
+.footer__item {
+	text-align: center;
+	padding-top: 29px;
+	padding-bottom: 14px;
+	font-style: normal;
+	font-weight: 300;
+	font-size: 20px;
+	line-height: 30px;
+	text-align: center;
+	text-transform: uppercase;
+}
+
+/*--------- Footer style end ---------*/
