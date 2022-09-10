@@ -1,0 +1,93 @@
+
+@import "normalize.scss"
+@import "reset.scss"
+
+$color-bg: #FFFFFF
+$color-bg-2: #EFEFEF
+$color-subscribe: #817070
+
+*
+    box-sizing: border-box
+
+.container
+    max-width: 1440px
+    margin: 0 auto
+
+.header-section
+    height: 110px
+    &__nav-container
+        display: flex
+        flex-direction: row
+        justify-content: space-between
+        align-items: center
+        padding-top: 29px
+        background: $color-bg
+    &__logo
+        padding-left: 80px 
+    &__logo-text
+        font-size: 36px
+    &__nav
+        display: flex
+        flex-direction: row
+        justify-content: center
+        align-items: center
+
+.nav-menu
+    &__list
+        display: flex
+        flex-direction: row
+        justify-content: center
+        align-items: center
+        padding-right: 80px 
+    &__item
+        font-size: 24px
+        margin-right: 46px
+        &:last-child
+            margin-right: 0
+
+.background-container
+    max-width: 1440px
+    min-height: 622px 
+    background: url('../img/img_bg_1.png')
+    &__title
+        position: relative
+        padding-top: 266px
+        font-size: 60px
+        display: flex
+        flex-direction: column
+        justify-content: center
+        align-items: center
+        text-transform: uppercase
+    &__hr
+        position: absolute
+        top: 337px
+        width: 80px
+        height: 10px
+        background: $color-subscribe
+.title
+    margin-bottom: 60px
+    font-size: 36px
+    line-height: 53px
+    text-transform: uppercase
+.story-section
+    min-height: 632px
+    background: #FFFFFF
+    &__container
+
+    &__title
+        padding-top: 60px
+        display: flex
+        flex-direction: row
+        justify-content: center
+        align-items: center
+    &__container-content
+        min-height: 400px 
+        padding-left: 80px
+        display: flex
+        align-items: center
+    &__container-img
+        margin-right: 40px
+    &__container-text
+        max-height: 180px
+
+
