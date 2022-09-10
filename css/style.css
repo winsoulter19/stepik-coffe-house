@@ -361,6 +361,35 @@ table {
   border-spacing: 0;
 }
 
+@font-face {
+  font-family: "Oswald";
+  src: url("../fonts/Oswald-Light.ttf");
+  font-weight: 300;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Oswald";
+  src: url("../fonts/Oswald-Regular.ttf");
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Oswald";
+  src: url("../fonts/Oswald-Medium.ttf");
+  font-weight: 500;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Oswald";
+  src: url("../fonts/Oswald-Bold.ttf");
+  font-weight: 700;
+  font-style: normal;
+}
+html {
+  font-family: "Oswald";
+  font-weight: regular;
+}
+
 * {
   box-sizing: border-box;
 }
@@ -386,6 +415,8 @@ table {
 }
 .header-section__logo-text {
   font-size: 36px;
+  line-height: 53px;
+  font-weight: 500;
 }
 .header-section__nav {
   display: flex;
@@ -403,6 +434,8 @@ table {
 }
 .nav-menu__item {
   font-size: 24px;
+  font-weight: 300;
+  line-height: 36px;
   margin-right: 46px;
 }
 .nav-menu__item:last-child {
@@ -415,9 +448,12 @@ table {
   background: url("../img/img_bg_1.png");
 }
 .background-container__title {
+  color: #FFFFFF;
   position: relative;
   padding-top: 266px;
   font-size: 60px;
+  font-weight: 700;
+  line-height: 89px;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -426,7 +462,7 @@ table {
 }
 .background-container__hr {
   position: absolute;
-  top: 337px;
+  top: 367px;
   width: 80px;
   height: 10px;
   background: #817070;
@@ -434,19 +470,22 @@ table {
 
 .title {
   margin-bottom: 60px;
+  color: #000000;
   font-size: 36px;
   line-height: 53px;
+  font-weight: 500;
   text-transform: uppercase;
 }
 .title_sub {
   color: #FFFFFF;
   font-size: 36px;
+  font-weight: 500;
   line-height: 53px;
   text-transform: uppercase;
 }
 
 .story-section {
-  min-height: 632px;
+  height: 632px;
   background: #FFFFFF;
 }
 .story-section__title {
@@ -463,11 +502,17 @@ table {
   align-items: center;
 }
 .story-section__container-img {
+  max-width: 600px;
+  max-height: 400px;
   margin-right: 40px;
 }
 .story-section__container-text {
+  max-width: 560px;
   max-height: 180px;
-  padding-right: 123px;
+  color: #000000;
+  font-size: 20px;
+  line-height: 30px;
+  font-weight: 300;
 }
 
 .blog-section {
@@ -505,6 +550,9 @@ table {
 .card-item__title {
   font-size: 24px;
   line-height: 36px;
+  font-weight: 400;
+  line-height: 36px;
+  color: #000000;
   padding-top: 20px;
   margin-bottom: 24px;
 }
@@ -513,9 +561,11 @@ table {
   height: 216px;
   margin-bottom: 24px;
 }
-.card-item__logo-text {
+.card-item__text {
   font-size: 18px;
+  font-weight: 300;
   line-height: 27px;
+  color: #000000;
   margin-bottom: 46px;
 }
 
@@ -529,9 +579,6 @@ table {
   flex-direction: column;
 }
 
-.subscribe-item {
-  height: 126px;
-}
 .subscribe-item__title {
   margin-bottom: 28px;
 }
@@ -547,17 +594,24 @@ table {
   width: 300px;
   height: 55px;
   text-align: center;
-  font-size: 30px;
+  font-size: 20px;
+  font-weight: 300;
   margin-bottom: 41px;
+  line-height: 30px;
+  border: none;
   border: 3px solid #FFFFFF;
 }
 .subscribe-item__button {
-  border: 3px solid #FFFFFF;
-  background: #FFFFFF;
   width: 129px;
   height: 55px;
+  border: none;
+  border: 3px solid #FFFFFF;
+  background: #FFFFFF;
   font-size: 20px;
+  font-weight: 500;
+  line-height: 30px;
   color: #817070;
+  text-align: center;
 }
 
 .section-footer {
@@ -566,6 +620,7 @@ table {
 .section-footer__title {
   font-size: 20px;
   line-height: 30px;
+  font-weight: 300;
   text-align: center;
   text-transform: uppercase;
   color: #000000;

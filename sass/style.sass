@@ -1,9 +1,44 @@
+
 @import "normalize.scss"
 @import "reset.scss"
+
+@font-face
+    font-family: "Oswald"
+    src: url('../fonts/Oswald-Light.ttf')
+    font-weight: 300
+    font-style: normal
+
+@font-face
+    font-family: "Oswald"
+    src: url('../fonts/Oswald-Regular.ttf')
+    font-weight: 400
+    font-style: normal
+
+@font-face
+    font-family: "Oswald"
+    src: url('../fonts/Oswald-Medium.ttf')
+    font-weight: 500
+    font-style: normal
+
+@font-face
+    font-family: "Oswald"
+    src: url('../fonts/Oswald-Bold.ttf')
+    font-weight: 700
+    font-style: normal
+
+html
+    font-family: "Oswald"
+    font-weight: regular
 
 $color-bg: #FFFFFF
 $color-bg-2: #EFEFEF
 $color-subscribe: #817070
+$color-title_bg: #FFFFFF
+$color-title: #000000
+$color-text: #FFFFFF
+$color-text_bl: #000000
+$color-card: #FFFFFF
+$color-button: #FFFFFF
 
 *
     box-sizing: border-box
@@ -25,6 +60,8 @@ $color-subscribe: #817070
         padding-left: 80px 
     &__logo-text
         font-size: 36px
+        line-height: 53px
+        font-weight: 500
     &__nav
         display: flex
         flex-direction: row
@@ -40,6 +77,8 @@ $color-subscribe: #817070
         padding-right: 80px 
     &__item
         font-size: 24px
+        font-weight: 300
+        line-height: 36px
         margin-right: 46px
         &:last-child
             margin-right: 0
@@ -49,9 +88,12 @@ $color-subscribe: #817070
     min-height: 622px 
     background: url('../img/img_bg_1.png')
     &__title
+        color: $color-title_bg
         position: relative
         padding-top: 266px
         font-size: 60px
+        font-weight: 700
+        line-height: 89px
         display: flex
         flex-direction: column
         justify-content: center
@@ -59,23 +101,27 @@ $color-subscribe: #817070
         text-transform: uppercase
     &__hr
         position: absolute
-        top: 337px
+        top: 367px
         width: 80px
         height: 10px
         background: $color-subscribe
 .title
     margin-bottom: 60px
+    color: $color-title
     font-size: 36px
     line-height: 53px
+    font-weight: 500
     text-transform: uppercase
     &_sub
-        color: #FFFFFF
+        color: $color-title_bg
         font-size: 36px
+        font-weight: 500
         line-height: 53px
         text-transform: uppercase
+
 .story-section
-    min-height: 632px
-    background: #FFFFFF
+    height: 632px
+    background: $color-bg
 
     &__title
         padding-top: 60px
@@ -89,10 +135,17 @@ $color-subscribe: #817070
         display: flex
         align-items: center
     &__container-img
+        max-width: 600px
+        max-height: 400px
         margin-right: 40px
     &__container-text
+        max-width: 560px
         max-height: 180px
-        padding-right: 123px
+        color: $color-text_bl
+        font-size: 20px
+        line-height: 30px
+        font-weight: 300
+
 
 .blog-section
     min-height: 711px
@@ -120,24 +173,29 @@ $color-subscribe: #817070
 .card-item 
     width: 365px
     height: 474px
-    background: #FFFFFF
+    background: $color-card
     padding: 0px 20px
     &__title
         font-size: 24px
         line-height: 36px
+        font-weight: 400
+        line-height: 36px
+        color: $color-text_bl
         padding-top: 20px
         margin-bottom: 24px
     &__img
         width: 325px
         height: 216px
         margin-bottom: 24px
-    &__logo-text
+    &__text
         font-size: 18px
+        font-weight: 300
         line-height: 27px
+        color: $color-text_bl
         margin-bottom: 46px
 
 .subscribe-section
-    background: #817070
+    background: $color-subscribe
     min-height: 337px
     &__subscribe-box
         padding-top: 60px
@@ -145,7 +203,6 @@ $color-subscribe: #817070
         flex-direction: column
 
 .subscribe-item
-    height: 126px
     &__title
         margin-bottom: 28px
     &__form
@@ -154,22 +211,29 @@ $color-subscribe: #817070
         flex-direction: column
         justify-content: center
         align-items: center
-        color: #817070
+        color: $color-subscribe
     &__input
         width: 300px
         height: 55px
         text-align: center
-        font-size: 30px
+        font-size: 20px
+        font-weight: 300
         margin-bottom: 41px
+        line-height: 30px
+        border: none
+        border: 3px solid #FFFFFF
 
-        border: 3px solid #FFFFFF
     &__button
-        border: 3px solid #FFFFFF
-        background: #FFFFFF
         width: 129px
         height: 55px
+        border: none
+        border: 3px solid #FFFFFF
+        background: #FFFFFF
         font-size: 20px
-        color: #817070
+        font-weight: 500
+        line-height: 30px
+        color: $color-subscribe
+        text-align: center
 
 
 .section-footer
@@ -177,8 +241,9 @@ $color-subscribe: #817070
     &__title
         font-size: 20px
         line-height: 30px
+        font-weight: 300
         text-align: center
         text-transform: uppercase
-        color: #000000
+        color: $color-text_bl
         padding-top: 28px
 
