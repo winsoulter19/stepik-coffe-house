@@ -1,4 +1,3 @@
-
 @import "normalize.scss"
 @import "reset.scss"
 
@@ -69,12 +68,14 @@ $color-subscribe: #817070
     font-size: 36px
     line-height: 53px
     text-transform: uppercase
-    &_
-        color: red
+    &_sub
+        color: #FFFFFF
+        font-size: 36px
+        line-height: 53px
+        text-transform: uppercase
 .story-section
     min-height: 632px
     background: #FFFFFF
-    &__container
 
     &__title
         padding-top: 60px
@@ -138,10 +139,46 @@ $color-subscribe: #817070
 .subscribe-section
     background: #817070
     min-height: 337px
-    &__title
-        display: flex
-        flex-direction: row
-        justify-content: center
+    &__subscribe-box
         padding-top: 60px
-        color: #FFFFFF
+        display: flex
+        flex-direction: column
+
+.subscribe-item
+    height: 126px
+    &__title
+        margin-bottom: 28px
+    &__form
+        height: 250px
+        display: flex
+        flex-direction: column
+        justify-content: center
+        align-items: center
+        color: #817070
+    &__input
+        width: 300px
+        height: 55px
+        text-align: center
+        font-size: 30px
+        margin-bottom: 41px
+
+        border: 3px solid #FFFFFF
+    &__button
+        border: 3px solid #FFFFFF
+        background: #FFFFFF
+        width: 129px
+        height: 55px
+        font-size: 20px
+        color: #817070
+
+
+.section-footer
+    height: 72px
+    &__title
+        font-size: 20px
+        line-height: 30px
+        text-align: center
+        text-transform: uppercase
+        color: #000000
+        padding-top: 28px
 
