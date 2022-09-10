@@ -438,8 +438,11 @@ table {
   line-height: 53px;
   text-transform: uppercase;
 }
-.title_ {
-  color: red;
+.title_sub {
+  color: #FFFFFF;
+  font-size: 36px;
+  line-height: 53px;
+  text-transform: uppercase;
 }
 
 .story-section {
@@ -520,10 +523,51 @@ table {
   background: #817070;
   min-height: 337px;
 }
-.subscribe-section__title {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
+.subscribe-section__subscribe-box {
   padding-top: 60px;
-  color: #FFFFFF;
+  display: flex;
+  flex-direction: column;
+}
+
+.subscribe-item {
+  height: 126px;
+}
+.subscribe-item__title {
+  margin-bottom: 28px;
+}
+.subscribe-item__form {
+  height: 250px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: #817070;
+}
+.subscribe-item__input {
+  width: 300px;
+  height: 55px;
+  text-align: center;
+  font-size: 30px;
+  margin-bottom: 41px;
+  border: 3px solid #FFFFFF;
+}
+.subscribe-item__button {
+  border: 3px solid #FFFFFF;
+  background: #FFFFFF;
+  width: 129px;
+  height: 55px;
+  font-size: 20px;
+  color: #817070;
+}
+
+.section-footer {
+  height: 72px;
+}
+.section-footer__title {
+  font-size: 20px;
+  line-height: 30px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #000000;
+  padding-top: 28px;
 }/*# sourceMappingURL=style.css.map */
