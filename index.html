@@ -12,84 +12,89 @@
 <body>
 
 <!-- Header -->
-
-<section class="header-section">
-	<div class="header-section__nav-container container">
-		<header class="header-section__logo">
-			<h1 class="header-section__logo-text">COFFE HOUSE</h1>
-		</header>
-		<nav class="header-section__nav nav-menu">
-			<ul class="nav-menu__list">
-				<li class="nav-menu__item">HOME</li>
-				<li class="nav-menu__item">STORY</li>
-				<li class="nav-menu__item">BLOG</li>
-				<li class="nav-menu__item">SUBSCRIBE</li>
-			</ul>
+<header class="header">
+	<div class="container header-container">
+		<h1 class="header-container__logo">COFFE HOUSE</h1>
+		<nav class="header__nav nav-menu">
+			<a class="nav-menu__item" href="#">HOME</a>
+			<a class="nav-menu__item" href="#story-section">STORY</a>
+			<a class="nav-menu__item" href="#blog-section">BLOG</a>
+			<a class="nav-menu__item" href="#subscribe-section">SUBSCRIBE</a>
 		</nav>
 	</div>
-</section>
-<!-- background image -->
-<section class="background-container container">
-	<div class="background-container__title-container">
-		<h1 class="background-container__title">TAKE YOUR TIME
-			<div class="background-container__hr"></div>
+</header><!-- /.Header -->
+
+<!-- Background Section -->
+<section class="background-section">
+	<div class="container background-section__container">
+		<h1 class="background-section__title">TAKE YOUR TIME
 		</h1>
 	</div>
-</section>
+</section> <!-- /.Background Section -->
 
 
-<!-- Story -->
-<section class="story-section">
-	<div class="story-section__container container">
-		<h1 class="story-section__title title">Story</h1>
-		<div class="story-section__container-content">
-			<img class="story-section__container-img" src="img/img_story_bg.png" alt="">
-			<p class="story-section__container-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean varius eget arcu quis cursus. Nunc id tortor imperdiet, vestibulum orci sed, gravida orci. Cras a enim ac elit eleifend euismod. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Praesent mattis ultrices est, congue ullamcorper erat bibendum pulvinar. In accumsan dapibus accumsan. Maecenas semper est ut nunc feugiat, vel ultrices ligula commodo. Donec eget pulvinar nunc, eget pharetra risus.</p>
+<!-- Story Section -->
+<section class="story-section" id="story-section">
+	<h1 class="story-section__title title">Story</h1>
+	<!-- Story Container -->
+	<div class="container story-section__container">
+		<div class="story-section__content">
+			<img class="story-section__content-img" src="img/img_story_bg.png" alt="">
+			<p class="story-section__content-text text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean varius eget arcu quis cursus. Nunc id tortor imperdiet, vestibulum orci sed, gravida orci. Cras a enim ac elit eleifend euismod. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Praesent mattis ultrices est, congue ullamcorper erat bibendum pulvinar. In accumsan dapibus accumsan. Maecenas semper est ut nunc feugiat, vel ultrices ligula commodo. Donec eget pulvinar nunc, eget pharetra risus.</p>
 		</div>
-	</div>
-</section>
+	</div> <!-- /.Story Container -->
+</section> <!-- /.Story Section-->
 
-	<section class="blog-section">
-		<div class="blog-section__container container">
+<!-- Blog Section -->
+	<section class="blog-section" id="blog-section">
+		<!-- Blog Container -->
+		<div class="container blog-section__container">
 			<h1 class="blog-section__title title">Blog</h1>
-		<!-- Карточки -->
+		<!-- Card Container -->
 			<div class="blog-section__card-box">
-				<!-- Карточка -->
+				<!-- Card -->
 				<div class="blog-section__card-item card-item">
 					<h2 class="card-item__title">Daily Coffee News</h2>
 					<img src="/img/img_blog_card_1.png" alt="" class="card-item__img">
 					<p class="card-item__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean varius eget arcu quis cursus. Nunc id tortor imperdiet, vestibulum orci sed, gravida orci. Cras a enim ac elit eleifend euismod.</p>
 				</div>
-				<!-- Карточка -->
+
+				<!-- Card -->
 				<div class="blog-section__card-item card-item">
 					<h2 class="card-item__title">Dutch Coffee Chains </h2>
 					<img src="/img/img_blog_card_2.png" alt="" class="card-item__img">
 					<p class="card-item__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean varius eget arcu quis cursus. Nunc id tortor imperdiet, vestibulum orci sed, gravida orci. Cras a enim ac elit eleifend euismod.</p>
 				</div>
-				<!-- Карточка -->
+
+				<!-- Card -->
 				<div class="blog-section__card-item card-item">
 					<h2 class="card-item__title">Start Up In Minneapolis</h2>
 					<img src="/img/img_blog_card_3.png" alt="" class="card-item__img">
 					<p class="card-item__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean varius eget arcu quis cursus. Nunc id tortor imperdiet, vestibulum orci sed, gravida orci. Cras a enim ac elit eleifend euismod.</p>
-				</div>
-			</div>
-		</div>
-	</section>
-	<section class="subscribe-section">
-		<div class="subscribe-section__container container">
-			<div class="subscribe-section__subscribe-box subscribe-item">
-					<form  class= "subscribe-item__form" action="">
-						<h1 class="subscribe-item__title title_sub">SUBSCRIBE</h1>
-						<input class= "subscribe-item__input" type="email" placeholder="enter your email">
-						<button class="subscribe-item__button">SUBMIT</button>
-					</form>
-			</div>
-		</div>
-	</section>
+				</div><!-- /.Card  -->
+			</div> <!-- /.Blog Container -->	
+		</div> <!--/.Card Container-->
+	</section> <!-- /.blog-section" -->
+
+    <!-- Subscribe section -->
+	<section class="subscribe-section" id="subscribe-section">
+		<!-- Subscribe Container -->
+		<div class="container subscribe-section__container">
+			<h1 class="subscribe-section__title title title_sub">SUBSCRIBE</h1>
+			<form class= "subscribe-item" action="/" method="post">
+				<input class= "subscribe-item__input" type="email" name="input_email" placeholder="enter your email">
+				<button class="subscribe-item__button button" type="submit">SUBMIT</button>
+			</form>
+		</div><!-- /.Subscribe Container -->
+	</section> <!-- /.subscribe-section -->
+
+	<!-- Section Footer -->
 	<footer class="section-footer">
-		<div class="section-footer__container container">
+		<!-- Footer Container -->
+		<div class="container section-footer__container">
 			<h2 class="section-footer__title">© COPYRIGHT 2021</h2>
-		</div>
-	</footer>
+		</div> <!-- /.Footer Container -->
+	</footer> <!-- /.Section Footer -->
+
 </body>
 </html>
