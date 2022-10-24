@@ -432,7 +432,7 @@ html {
   padding-top: 20px;
   margin-bottom: 24px;
   font-size: 1.6rem;
-  font-weight: 400;
+  font-weight: 500;
   line-height: 2.4rem;
   color: #000000;
 }
@@ -504,18 +504,18 @@ html {
 }
 
 .background-section {
-  width: 100%;
-  height: 622px;
-  background: url("../img/img_bg_1.png") center no-repeat;
-  background-size: cover;
-}
-.background-section__title {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  width: 100%;
+  height: 622px;
+  background: url("../img/img_bg_1.png") center no-repeat;
+  background-size: cover;
   position: relative;
-  padding-top: 266px;
+}
+.background-section__title {
+  position: absolute;
   font-size: 4rem;
   font-weight: 700;
   line-height: 1.2;
@@ -528,7 +528,8 @@ html {
   height: 10px;
   content: "";
   position: absolute;
-  top: 367px;
+  top: 100px;
+  left: 160px;
   background: #817070;
 }
 
@@ -634,6 +635,13 @@ html {
   .container {
     width: 720px;
   }
+  .background-section {
+    height: 350px;
+  }
+  .background-section :after {
+    top: 80px;
+    left: 160px;
+  }
   .story-section__content {
     margin-bottom: 60px;
   }
@@ -657,7 +665,7 @@ html {
   .header-container {
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    flex-wrap: wrap;
     padding: 10px 0px 0px;
   }
   .header-container__logo {
@@ -669,20 +677,16 @@ html {
     font-weight: 300;
     text-decoration: none;
     color: #000000;
-    cursor: pointer;
-  }
-  .nav-menu__item:hover {
-    color: #5a4c4c;
   }
   .background-section {
-    height: 350px;
+    height: 300px;
   }
   .background-section__title {
     font-size: 2.6rem;
-    top: -150px;
   }
-  .background-section__title::after {
-    display: none;
+  .background-section :after {
+    top: 50px;
+    left: 95px;
   }
   .card-item {
     width: 60%;
@@ -692,6 +696,9 @@ html {
   .container {
     width: 100%;
   }
+  .header-container__logo {
+    font-size: 2rem;
+  }
   .nav-menu__item {
     margin-right: 20px;
     font-size: 1.4rem;
@@ -700,14 +707,10 @@ html {
     color: #000000;
   }
   .background-section {
-    height: 300px;
+    height: 250px;
   }
   .background-section__title {
-    top: -150px;
     font-size: 2.6rem;
-  }
-  .background-section__title::after {
-    display: none;
   }
   .text {
     font-size: 18px;
